@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Safe Land Tourism LLC</title>
+<meta name="description" content="Safe Land Tourism LLC — Dubai tours, tickets, transport, yacht, desert safari and more.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧭</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="bar container">
+    <div class="logo" id="logo-text">SAFE LAND</div>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">☰</button>
+    <nav class="main-nav" id="main-nav">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#destinations">Destinations</a>
+      <a href="#testimonials">Reviews</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="header-cta" id="header-cta" href="#contact">Get in Touch</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <div>
+      <span class="eyebrow" id="hero-eyebrow">📍 Dubai, UAE</span>
+      <h1 id="hero-title">SAFE LAND TOURISM LLC</h1>
+      <div class="role" id="hero-role">Tours, Tickets, Transport &amp; Luxury Experiences</div>
+      <p class="intro" id="hero-intro">From desert safaris to yacht cruises, we plan every detail of your Dubai trip.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" id="hero-cta-primary" href="#contact">Get in Touch</a>
+        <a class="btn btn-ghost" id="hero-cta-secondary" href="#services">Our Services</a>
+      </div>
+    </div>
+    <div class="skyline" aria-hidden="true">
+      <svg viewBox="0 0 400 320" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="skyGrad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#DCEFFB" stop-opacity=".9"/>
+            <stop offset="1" stop-color="#DCEFFB" stop-opacity=".15"/>
+          </linearGradient>
+        </defs>
+        <!-- Burj Khalifa silhouette -->
+        <polygon points="150,300 158,140 165,90 172,60 178,90 185,140 193,300" fill="url(#skyGrad)"/>
+        <!-- Burj Al Arab sail silhouette -->
+        <path d="M240,300 C238,220 250,140 300,110 C285,180 278,250 280,300 Z" fill="#29ABE2" opacity=".55"/>
+        <!-- low skyline blocks -->
+        <rect x="40" y="230" width="26" height="70" fill="#1C86BD" opacity=".5"/>
+        <rect x="72" y="200" width="22" height="100" fill="#17B4C8" opacity=".5"/>
+        <rect x="100" y="245" width="30" height="55" fill="#1C86BD" opacity=".4"/>
+        <rect x="300" y="240" width="24" height="60" fill="#17B4C8" opacity=".45"/>
+        <rect x="330" y="215" width="20" height="85" fill="#1C86BD" opacity=".45"/>
+        <!-- wave under skyline -->
+        <path d="M0,300 Q100,280 200,300 T400,300 V320 H0 Z" fill="#D4A94A" opacity=".9"/>
+      </svg>
+    </div>
+  </div>
+  <div class="wave-divider">
+    <svg viewBox="0 0 1440 90" preserveAspectRatio="none"><path d="M0,40 C240,90 480,0 720,30 C960,60 1200,10 1440,40 L1440,90 L0,90 Z" fill="#F6F8FB"/></svg>
+  </div>
+</section>
+
+<section id="about">
+  <div class="container about-grid">
+    <div class="md-card">
+      <div class="avatar" id="md-avatar">S</div>
+      <div class="name" id="md-name">Sheikh Rasel</div>
+      <div class="title" id="md-title">Managing Director</div>
+      <div class="stats-row" id="stats-row"></div>
+    </div>
+    <div class="about-copy">
+      <h2 id="about-heading">About Us</h2>
+      <p id="about-text"></p>
+    </div>
+  </div>
+</section>
+
+<section id="services" style="background:#fff;">
+  <div class="container">
+    <div class="section-head">
+      <span class="kicker">What we offer</span>
+      <h2>Our Services</h2>
+      <p>Everything you need for a smooth, memorable trip — booked in one place.</p>
+    </div>
+    <div class="services-grid" id="services-grid"></div>
+  </div>
+</section>
+
+<section id="destinations">
+  <div class="container">
+    <div class="section-head">
+      <span class="kicker">Where we take you</span>
+      <h2>Popular Destinations</h2>
+      <p>A few of Dubai's most-loved sights, part of our sightseeing &amp; city tours.</p>
+    </div>
+    <div class="dest-row" id="dest-row"></div>
+  </div>
+</section>
+
+<section id="testimonials" style="background:#fff;">
+  <div class="container">
+    <div class="section-head">
+      <span class="kicker">Traveler stories</span>
+      <h2>What Our Clients Say</h2>
+    </div>
+    <div class="testi-grid" id="testi-grid"></div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <div class="contact-wrap">
+      <div>
+        <h2 id="contact-heading">Contact Us</h2>
+        <p id="contact-subtext"></p>
+        <ul class="contact-list">
+          <li><span class="ic">📍</span><span id="contact-address"></span></li>
+          <li><span class="ic">📞</span><a id="contact-phone" href="#"></a></li>
+          <li><span class="ic">✉️</span><a id="contact-email" href="#"></a></li>
+          <li><span class="ic">🌐</span><a id="contact-website" href="#" target="_blank" rel="noopener"></a></li>
+        </ul>
+        <div class="social-row" id="social-row"></div>
+      </div>
+      <div class="map-box">Add a Google Maps embed here via the admin panel or by editing index.html directly.</div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container" id="footer-text"></div>
+</footer>
+
+<script src="assets/script.js"></script>
+</body>
+</html>
