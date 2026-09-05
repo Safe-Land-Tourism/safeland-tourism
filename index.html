@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safe Land Tourism LLC | Official Travel Agency</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="top-info">
+            <span><i class="fa-solid fa-envelope"></i> info@safelandtourism.com</span>
+            <span><i class="fa-solid fa-phone"></i> +971 50 491 5900</span>
+            <span><i class="fa-solid fa-location-dot"></i> Hor Al Anz, Deira Dubai, UAE</span>
+        </div>
+        <div class="top-socials">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+    </div>
+
+    <!-- Header / Navbar -->
+    <header>
+        <div class="logo">
+            <h2>SAFE LAND <span>TOURISM</span></h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#tours">Tour Packages</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="header-btn" onclick="sendWhatsApp('General Inquiry')">Book Now</button>
+    </header>
+
+    <!-- Hero Banner -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Discover The Beauty Of Dubai</h1>
+            <p>Your Trusted Partner for Tours, Tickets, Desert Safari & Visa Services</p>
+            <div class="hero-btns">
+                <a href="#tours" class="btn btn-primary">Explore Tours</a>
+                <button onclick="sendWhatsApp('Custom Tour Plan')" class="btn btn-secondary"><i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features / Highlights -->
+    <section class="features">
+        <div class="feature-box">
+            <i class="fa-solid fa-bolt"></i>
+            <h3>Instant Booking</h3>
+            <p>Fast and hassle-free ticket confirmation via WhatsApp.</p>
+        </div>
+        <div class="feature-box">
+            <i class="fa-solid fa-headset"></i>
+            <h3>24/7 Support</h3>
+            <p>Dedicated customer support for all your travel needs.</p>
+        </div>
+        <div class="feature-box">
+            <i class="fa-solid fa-tags"></i>
+            <h3>Best Price Guarantee</h3>
+            <p>Affordable rates on top Dubai attractions and tours.</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-text">
+            <h2>Welcome to Safe Land Tourism LLC</h2>
+            <p>We provide world-class tourism services in Dubai and across the UAE. From desert adventures and luxury cruises to city tours and theme park tickets, we ensure an unforgettable travel experience for individuals and groups.</p>
+            <ul>
+                <li><i class="fa-solid fa-check"></i> Personalized Group Tours & Transfers</li>
+                <li><i class="fa-solid fa-check"></i> Official Ticket Booking Partner</li>
+                <li><i class="fa-solid fa-check"></i> Experienced Travel Consultants</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Our Services -->
+    <section id="services" class="services">
+        <div class="section-title">
+            <h2>Our Core Services</h2>
+            <p>We handle all aspects of your trip with professionalism</p>
+        </div>
+        <div class="service-grid">
+            <div class="service-item">
+                <i class="fa-solid fa-ticket"></i>
+                <h3>All Attraction Tickets</h3>
+            </div>
+            <div class="service-item">
+                <i class="fa-solid fa-hotel"></i>
+                <h3>Hotel Bookings</h3>
+            </div>
+            <div class="service-item">
+                <i class="fa-solid fa-plane"></i>
+                <h3>Airport Pick & Drop</h3>
+            </div>
+            <div class="service-item">
+                <i class="fa-solid fa-ship"></i>
+                <h3>Yacht & Cruise Tours</h3>
+            </div>
+            <div class="service-item">
+                <i class="fa-solid fa-car"></i>
+                <h3>Limousine Ride</h3>
+            </div>
+            <div class="service-item">
+                <i class="fa-solid fa-helicopter"></i>
+                <h3>Helicopter Ride</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tour Packages Section -->
+    <section id="tours" class="tours">
+        <div class="section-title">
+            <h2>Popular Attractions & Tickets</h2>
+            <p>Click on any package to book directly on WhatsApp</p>
+        </div>
+        <div class="tour-grid">
+
+            <div class="tour-card">
+                <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=500&q=80" alt="Desert Safari">
+                <div class="tour-body">
+                    <h3>Evening Desert Safari</h3>
+                    <p>Dune Bashing, Camel Ride, BBQ Dinner, Fire & Belly Dance Shows.</p>
+                    <div class="card-footer">
+                        <span class="price">From AED 150</span>
+                        <button onclick="sendWhatsApp('Evening Desert Safari')"><i class="fa-brands fa-whatsapp"></i> Book Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tour-card">
+                <img src="https://images.unsplash.com/photo-1546412414-8035e1776c9a?auto=format&fit=crop&w=500&q=80" alt="Burj Khalifa">
+                <div class="tour-body">
+                    <h3>Burj Khalifa At The Top</h3>
+                    <p>Access to 124th & 125th Floor Observatory Deck with panoramic views.</p>
+                    <div class="card-footer">
+                        <span class="price">From AED 179</span>
+                        <button onclick="sendWhatsApp('Burj Khalifa Tickets')"><i class="fa-brands fa-whatsapp"></i> Book Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tour-card">
+                <img src="https://images.unsplash.com/photo-1518684079-3c830dcef090?auto=format&fit=crop&w=500&q=80" alt="Dhow Cruise">
+                <div class="tour-body">
+                    <h3>Dhow Cruise Dinner</h3>
+                    <p>2-hour cruise at Dubai Marina with 5-star international buffet dinner.</p>
+                    <div class="card-footer">
+                        <span class="price">From AED 120</span>
+                        <button onclick="sendWhatsApp('Dhow Cruise Dinner')"><i class="fa-brands fa-whatsapp"></i> Book Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tour-card">
+                <img src="https://images.unsplash.com/photo-1580674684081-7617fbf3d745?auto=format&fit=crop&w=500&q=80" alt="Yacht Tour">
+                <div class="tour-body">
+                    <h3>Luxury Yacht Tour</h3>
+                    <p>Sightseeing along Dubai coastline, Marina, Atlantis & Burj Al Arab.</p>
+                    <div class="card-footer">
+                        <span class="price">From AED 200</span>
+                        <button onclick="sendWhatsApp('Luxury Yacht Tour')"><i class="fa-brands fa-whatsapp"></i> Book Now</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact & Footer -->
+    <footer id="contact">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>Safe Land Tourism LLC</h3>
+                <p>Leading travel & tour management agency in Dubai. Dedicated to providing high-quality holiday and ticket services.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Contact Info</h3>
+                <p><strong>Managing Director:</strong> Sheikh Rasel</p>
+                <p><strong>Phone:</strong> +971 50 491 5900</p>
+                <p><strong>Email:</strong> info@safelandtourism.com</p>
+                <p><strong>Location:</strong> Hor Al Anz, Deira Dubai, UAE</p>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <p><a href="#home">Home</a></p>
+                <p><a href="#about">About Us</a></p>
+                <p><a href="#tours">Packages</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Safe Land Tourism LLC. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="javascript:void(0)" class="floating-wa" onclick="sendWhatsApp('General Floating Contact')">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
